@@ -10,7 +10,7 @@
             <div class="header">
                 <h1>{{ header.toLocaleUpperCase() }}</h1>
                 <button v-if="state === 'default'" class="btn btn-primary" @click="changeState('edit')">Add Item</button>
-                <button v-else class="btn btn-cancel" @click="changeState('default')">Cancel Adding Item</button>
+                <button v-else class="btn btn-cancel" @click="changeState('default')">Cancel Adding Items</button>
             </div>
             <div v-if="state === 'edit'" class="add-item-form">
                 <input v-model="newItem" type="text" placeholder="Add an item" @keyup.enter="saveItem">
